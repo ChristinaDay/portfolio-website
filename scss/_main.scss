@@ -3,10 +3,10 @@
 // $body-font: "ff-enzo-web",sans-serif;
 @import "settings";
 
-html, body {
-  height: 100%;
-  min-height: 100%;
-}
+// html, body {
+//   height: 100%;
+//   min-height: 100%;
+// }
 
 // .fullscreen-img {
 //   display:block;
@@ -17,58 +17,52 @@ html, body {
 //   border-bottom: 50px solid rgba(177, 99, 163, 0.36);
 // }
 
-.content-area {
-  border-top: 4px solid #f5ae8e;
-}
+// .content-area {
+//   border-top: 4px solid #f5ae8e;
+// }
 
-.services-content {
-  background-color: #F1F1F1;
-}
+// .services-content {
+//   background-color: #F1F1F1;
+// }
 
-.full-width {
-  padding: 4%;
-}
+// .full-width {
+  // padding: 4%;
+// }
 
 .top-bar-section ul li > a, .top-bar-section ul li > a:active, .top-bar-section ul li > a:visited {
   text-transform: uppercase;
   transition: background 0.5s ease;
 }
 
-.masonry-brick { width: 220px; margin: 10px; float: left;  }
-#masonryContainer {
-  width: 0 auto;
-  margin: 0 5% 0 5%;
-}
-
 .name {
    height: 0px;
 }
 
-.logo {
+.brand {
   text-align: center;
-}
 
-.logo h1 {
-  color: #fff;
-  font-size: 5em;
-  text-shadow: 4px 7px 1px rgba(46, 240, 248, 0.42);
+  h1 {
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 4px 7px 1px rgba(46, 240, 248, 0.42);
+
+    a:visited {
+      color: #fff;
+    }
+  }
 }
 
 .leader-content {
   padding: 0 7% 7% 7%;
-}
 
-.leader-content ul {
-  list-style-type: none;
-}
+  ul {
+    list-style-type: none;
+  }
 
-.leader-content li img {
-  height: 331px;
-  margin-top: 29px;
-}
-
-.logo h1 a:visited {
-  color: #fff;
+  li img {
+    height: 331px;
+    margin-top: 29px;
+  }
 }
 
 h2 {
@@ -80,6 +74,7 @@ h2 {
   background-color: #f5ae8e;
   height: 4px;
 }
+
 .top-bar ul li {
   border-bottom: 4px solid rgba(46, 240, 248, 0.11);
 }
@@ -87,55 +82,64 @@ h2 {
 .f-topbar-fixed {padding-top: 0 !important;}
 
 .portfolioFilter {
-    text-align: center;
-    margin-bottom: 10px;
-}
+  text-align: center;
+  margin-bottom: 10px;
 
-.portfolioFilter a {
+  a {
     margin-right: 10px;
     color:#666;
     text-decoration:none;
-}
+  }
 
-.portfolioFilter a.current {
+  a.current {
     font-weight:bold;
+  }
 }
 
+.portfolioContainer {
+  margin: 0 auto;
+  padding: 15px;
+  border: 6px solid black;
+}
+
+.item {
+  float: left;
+  margin: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+.item.w2 {
+  width: 330px;
+}
+
+.item.h2 {
+  height: 330px;
+}
+
+// the rest are required by isotope
 .isotope-item {
-    width: 260px;
-    margin: 5px 5px 5px 5px;
-    z-index: 2;
+  width: 150px;
+  margin: 15px;
+  z-index: 2;
 }
 
 .isotope-hidden.isotope-item {
-    pointer-events: none;
-    z-index: 1;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .isotope,
 .isotope .isotope-item {
   /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+  transition-duration: 0.8s;
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
+  transition-property: height, width;
+  .isotope-item {
+    transition-property: transform, opacity;
+  }
 }
 
 /**** disabling Isotope CSS3 transitions ****/
@@ -143,9 +147,5 @@ h2 {
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
+  transition-duration: 0s;
 }
