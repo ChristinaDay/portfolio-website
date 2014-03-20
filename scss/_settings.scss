@@ -8,6 +8,7 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
 
+
 // $experimental: true;
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
@@ -31,14 +32,14 @@
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+ $row-width: rem-calc(2000);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-bg: #fff;
+$body-font-color: #494975;
+$body-font-family: "ff-enzo-web",sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -51,7 +52,7 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+ $primary-color: #B163A3;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -113,10 +114,10 @@
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: 'Parisienne', cursive;
 // $header-font-weight: 300;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: $primary-color;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -490,7 +491,7 @@
 // $input-focus-border-color: scale-color(#fff, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
-// $input-border-radius: $global-radius;
+// $input-border-radius: 0;
 // $input-disabled-bg: #ddd;
 // $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 // $input-include-glowing-effect: true;
@@ -1123,36 +1124,36 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: rgba(177, 99, 163, 0.36);
+//$topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
+ //$topbar-height: 70px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
-// $topbar-title-font-size: rem-calc(17);
+// $topbar-title-font-size: rem-calc(20);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+ $topbar-dropdown-bg: rgba(46, 240, 248, 0.21);
 // $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+ $topbar-dropdown-link-bg: $topbar-dropdown-bg;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+//$topbar-link-color: $topbar-bg-color;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg-hover: #272727  ;
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-hover: rgba(46, 240, 248, 0.21);
+$topbar-link-bg-active: rgba(46, 240, 248, 0.21);
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 
@@ -1165,7 +1166,7 @@
 // $topbar-dropdown-label-bg: #333;
 
 // Top menu icon styles
-// $topbar-menu-link-transform: uppercase;
+$topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
@@ -1184,7 +1185,7 @@
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
+$topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 //
