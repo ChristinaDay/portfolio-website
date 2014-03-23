@@ -114,7 +114,7 @@ $body-font-family: "ff-enzo-web",sans-serif;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: 'Parisienne', cursive;
+$header-font-family: 'Josefin Slab', serif;
 // $header-font-weight: 300;
 // $header-font-style: normal;
 $header-font-color: $primary-color;
@@ -1128,7 +1128,7 @@ $topbar-bg-color: rgba(177, 99, 163, 0.36);
 //$topbar-bg: $topbar-bg-color;
 
 // Height and margin
- //$topbar-height: 70px;
+$topbar-height: 78px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1138,7 +1138,7 @@ $topbar-bg-color: rgba(177, 99, 163, 0.36);
 // Style the top bar dropdown elements
  $topbar-dropdown-bg: rgba(46, 240, 248, 0.21);
 // $topbar-dropdown-link-color: #fff;
- $topbar-dropdown-link-bg: $topbar-dropdown-bg;
+ // $topbar-dropdown-link-bg: $topbar-dropdown-bg;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
