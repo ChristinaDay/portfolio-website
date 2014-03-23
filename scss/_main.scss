@@ -101,70 +101,56 @@ h2 {
   }
 }
 
-.portfolioContainer {
-  background: white;
-  margin-bottom: 60px;
+.portfolioFilter {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.portfolioWrapper {
-  padding: 2% 8% 8% 8%;
+.portfolioFilter a {
+    margin-right: 10px;
+    color:#666;
+    text-decoration:none;
 }
 
-.about-content {
-  border-top: 1px solid #615E5E;
-  padding: 8%;
-
+.portfolioFilter a.current {
+    font-weight:bold;
 }
 
-.contact-content {
-  border-top: 1px solid #615E5E;
-  padding: 8%;
+.isotope-item {
+    width: 260px;
+    margin: 5px 5px 5px 5px;
+    z-index: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.item {
-  float: left;
-  margin: 0 2px 4px;
-  width: 20%;
-  height: 159px;
-  overflow: hidden;
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
 }
-
-.item-w2 {
-  width: 40%;
-}
-
-.item-h2 {
-  height: 322px;
-}
-
-// the rest are required by isotope
-
-
 
 .isotope,
 .isotope .isotope-item {
   /* change duration value to whatever you like */
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 .isotope {
-  transition-property: height, width;
-  .isotope-item {
-    transition-property: transform, opacity;
-  }
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
 }
 
 /**** disabling Isotope CSS3 transitions ****/
@@ -172,15 +158,9 @@ h2 {
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  transition-duration: 0s;
-}
-
-.clear:before,
-.clear:after {
-    content: " ";
-    display: table;
-}
-
-.clear:after {
-    clear: both;
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
 }
