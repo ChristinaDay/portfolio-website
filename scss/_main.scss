@@ -13,7 +13,6 @@ h1 {
 h2 {
   font-size: 26px;
   font-style: bold;
-  letter-spacing: 3.12px;
   text-transform: uppercase;
 }
 
@@ -49,10 +48,8 @@ p {
   }
 }
 
-
-
-.portfolio {
-  padding-top: 30px;
+.portfolioWrapper {
+  padding: 0 67px 0 48px;
 }
 
 .portfolioFilter {

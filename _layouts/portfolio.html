@@ -30,15 +30,15 @@
         <div class="fixed">
           <nav class="top-bar" data-topbar>
             <ul class="title-area">
-              <li class="name">Christina<span>Marie</span>Day</li>
+              <li class="name"><a href="index.html">Christina<span>Marie</span>Day</a></li>
               <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
             </ul>
             <section class="top-bar-section">
               <ul class="right">
-                <li><a href="#">About</a></li>
-                <li><a href="work.html">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="http://neonmoment.tumblr.com" target="blank">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
               </ul>
             </section>
           </nav>
@@ -47,17 +47,17 @@
     </header>
 
     <main>
-
-      <div class="row">
-        <h2 class="portfolio-title large-12 columns">Portfolio</h2>
-      </div>
+      <a name="portfolio"></a>
 
             <div class="portfolioFilter">
               <a href="#" data-filter="*" class="current">All Categories</a>
+              <a href="#" data-filter=".design">All Design Work</a>
               <a href="#" data-filter=".logo">Logos</a>
               <a href="#" data-filter=".web">Web</a>
               <a href="#" data-filter=".print">Print</a>
-              <a href="#" data-filter=".objects">Objects</a>
+              <a href="#" data-filter=".photography">Photography</a>
+              <a href="#" data-filter=".draw-paint">Drawings &amp; Paintings</a>
+
             </div>
 
           </div>
@@ -67,18 +67,112 @@
 
 
 <!-- // ******** for reference, print out as background image in erb file -->
+        <div class="item item-w2 item-h3 print photography design">
+            <a href="#" data-reveal-id="firstModal" data-reveal>
+              <img src="assets/bookcover-sm.jpg"/>
+            </a>
+        </div>
+      </a>
+
+          <div class="item item-h2 draw-paint">
+            <a href="#" data-reveal-id="secondModal" data-reveal>
+              <img src="assets/sketch1-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-h2 logo design">
+            <a href="#" data-reveal-id="thirdModal" data-reveal>
+              <img src="assets/big-brother-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item draw-paint">
+            <a href="#" data-reveal-id="fourthModal" data-reveal>
+              <img src="assets/sisters-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-h2 logo web design">
+            <a href="#" data-reveal-id="fifthModal" data-reveal>
+              <img src="assets/navya-sm.jpg"/>
+            </a>
+          </div>
+
+
+          <div class="item">
+              <img src="assets/west-tx-sm.jpg"/>
+          </div>
 
           <div class="item item-w2 item-h3 logo">
-            <img src="assets/2jmrc.jpg"/>
+            <a href="#" data-reveal-id="seventhModal" data-reveal>
+              <img src="assets/janus-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-h2 logo design">
+            <a href="#" data-reveal-id="eighthModal" data-reveal>
+              <img src="assets/makersquare-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-w2 item-h2 logo web design">
+            <a href="#" data-reveal-id="ninthModal" data-reveal>
+              <img src="assets/vespaio-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-w2 item-h3 logo">
+            <a href="#" data-reveal-id="tenthModal" data-reveal>
+              <img src="assets/nymet-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-h2 photography">
+            <a href="#" data-reveal-id="eleventhModal" data-reveal>
+              <img src="assets/ginza1-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-w2 item-h3 design">
+            <a href="#" data-reveal-id="twelfthModal" data-reveal>
+              <img src="assets/raketbot-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item draw-paint">
+            <a href="#" data-reveal-id="thirteenthModal" data-reveal>
+              <img src="assets/secrets-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-w2 item-h2 draw-paint">
+            <img src="assets/cerebrus-sm.jpg"/>
+          </div>
+
+          <div class="item photography">
+            <a href="#" data-reveal-id="fourteenthModal" data-reveal>
+              <img src="assets/ginza2-sm.jpg"/>
+            </a>
+          </div>
+
+          <div class="item item-h2 draw-paint">
+            <img src="assets/mythos-sm.jpg"/>
+          </div>
+
+          <div class="item item-w2 item-h3 draw-paint">
+            <img src="assets/angela-sm.jpg"/>
           </div>
 
 
         </div>
       </div>
+      <a name="about"></a>
+
 
             <div class="full-width content-area about-content">
               <div class="row">
                 <h2 class="large-12 columns">About Us</h2>
+                <a name="about"></a>
               </div>
                 <div class="row">
 
@@ -102,6 +196,7 @@
 
 
       <div class="full-width content-area contact-content">
+        <a name="contact"></a>
         <div class="row">
           <h2 class="large-12 columns">Contact Us</h2>
         </div>
@@ -151,6 +246,202 @@
           </div>
         </footer>
 
+        <!--Reveal Modals Begin-->
+
+              <div id="firstModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/bookcover-sm.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Tokyo Photobook Project</h3>
+                      <p>More info soon</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="secondModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/sketch1-sm.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>From my sketchbook</h3>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="thirdModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-7 columns">
+                      <img src="assets/big-brother-m.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <p>Created for a design workshop</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="fourthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/sisters-m.jpg"/>
+                    </div
+
+                    <div class="large-4 columns"
+                      <h3><em>Sisters</em></h3>
+                      <p>Oil paint and graphite on birch</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="fifthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-7 columns">
+                      <img src="assets/bookcover-sm.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Tokyo Photobook Project</h3>
+                      <p>More info soon</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="sixthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-7 columns">
+                      <img src="assets/bookcover-sm.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Tokyo Photobook Project</h3>
+                      <p>More info soon</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="seventhModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/janus-m.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Janus</h3>
+                      <p>Graphite on birch</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="eighthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/bookcover-sm.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Tokyo Photobook Project</h3>
+                      <p>More info soon</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="ninthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-7 columns">
+                      <img src="assets/bookcover-sm.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Tokyo Photobook Project</h3>
+                      <p>More info soon</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="tenthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/nymet-m.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>The Met, NY</h3>
+                      <p>Canon AE-1</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="eleventhModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/ginza-m.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Ginza, Kyoto</h3>
+                      <p>Canon AE-1</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="twelfthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/raketbot-m.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3>Robot concept drawing</h3>
+                      <p>Illustrated in Photoshop</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="thirteenthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/secrets-m.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3><em>Secrets</em></h3>
+                      <p>Oil paint on canvas</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
+              <div id="fourteenthModal" class="reveal-modal" data-reveal>
+                <div class="row">
+                    <div class="large-8 columns">
+                      <img src="assets/ginza2-m.jpg"/>
+                    </div
+
+                    <div class="large-5 columns"
+                      <h3><em>Ginza, Kyoto</em></h3>
+                      <p>Canon AE-1</p>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+              </div>
+
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/foundation/js/foundation.min.js"></script>
         <script src="js/app.js"></script>
@@ -183,7 +474,7 @@
                   multiplier_w = $item.attr('class').match(/item-w(\d)/),
                   multiplier_h = $item.attr('class').match(/item-h(\d)/),
                   width = multiplier_w ? columnWidth*multiplier_w[1]-4 : columnWidth-4,
-                  height = multiplier_h ? columnWidth*multiplier_h[1]*0.5 + 10 : columnWidth*0.5 + 10;
+                  height = multiplier_h ? columnWidth*multiplier_h[1]*0.5 -4: columnWidth*0.5 -4;
                 $item.css({
                   width: width,
                   height: height
@@ -283,5 +574,8 @@
           //     });
           // });
         </script>
+
+
+
       </body>
 </html>
