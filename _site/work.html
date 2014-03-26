@@ -18,6 +18,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/app.css"
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/underscorejs/1.6.0/underscore-min.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/pfj2kgt.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
     <!--HEADER AREA-->
@@ -27,33 +30,27 @@
         <div class="fixed">
           <nav class="top-bar" data-topbar>
             <ul class="title-area">
-              <li class="name"></li>
+              <li class="name">Christina<span>Marie</span>Day</li>
               <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
             </ul>
             <section class="top-bar-section">
-              <ul class="left">
+              <ul class="right">
                 <li><a href="#">About</a></li>
                 <li><a href="work.html">Portfolio</a></li>
-              </ul>
-              <ul class="right">
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </section>
           </nav>
-          <div class="stripe"></div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="row">
-        <div class="large-12 columns brand">
-          <h1><a href="index.html">Christina Day</a></h1>
-        </div>
-      </section>
-        <div class="row portfolio">
-          <div class="large-12 columns">
+
+      <div class="row">
+        <h2 class="portfolio-title large-12 columns">Portfolio</h2>
+      </div>
 
             <div class="portfolioFilter">
               <a href="#" data-filter="*" class="current">All Categories</a>
@@ -68,117 +65,14 @@
         <div class="row portfolioWrapper">
         <div class="large-12 columns portfolioContainer">
 
-          <div class="logo item">
+
+<!-- // ******** for reference, print out as background image in erb file -->
+
+          <div class="item item-w2 item-h3 logo">
             <img src="assets/2jmrc.jpg"/>
           </div>
 
-          <div class="logo item">
-            <img src="assets/Akmrc.jpg"/>
-          </div>
 
-          <div class="print item">
-            <img src="assets/UImrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/hjmrc.jpg"/>
-          </div>
-
-          <div class="web item">
-            <img src="assets/lhmrc.jpg"/>
-          </div>
-
-          <div class="logo web item">
-            <img src="assets/njmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/xImrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/3hmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/8jmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/Ejmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/dImrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/jhmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/ljmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/pjmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/zImrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/3jmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/Ajmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/OImrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/gImrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/kgmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/nhmrc.jpg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/rhmrc.jpg"/>
-          </div>
-
-<!--           <div class="logo item">
-            <img src="assets/400.gif"/>
-          </div>
-
-          <div class="web logo item">
-            <img src="assets/cakeday.png"/>
-          </div>
-
-          <div class="logo item web">
-            <img src="assets/day-fin.jpeg"/>
-          </div>
-
-          <div class="logo item web print">
-            <img src="assets/navya.jpeg"/>
-          </div>
-
-          <div class="logo item">
-            <img src="assets/big-bro.jpeg"/>
-          </div>
-
-          <div class="web logo item">
-            <img src="assets/veggie-biter.png"/>
-          </div> -->
         </div>
       </div>
 
@@ -187,9 +81,22 @@
                 <h2 class="large-12 columns">About Us</h2>
               </div>
                 <div class="row">
-                  <div class="large-12 columns">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, asperiores, voluptas, veniam commodi impedit tenetur dolores cumque facere explicabo esse quaerat veritatis laboriosam eius modi amet maxime non officia nemo? Iste, quisquam, voluptatum, dolor nam reiciendis unde aliquam numquam necessitatibus odio et perspiciatis facere nihil inventore ullam aspernatur corporis veritatis quia dolorum? Sed, hic, eos quis quibusdam eum aut optio repudiandae at! Eligendi, neque ratione alias enim quae magnam dolores esse pariatur earum laborum reiciendis nobis sunt sequi sapiente ducimus iure ipsam. </p>
+
+                  <div class="large-6 columns">
+                      <p>
+                        Christina is a visual artist and designer in the central Austin area. She is currently expanding her front-end  development experience so she can participate more in the web design project workflow.
+                      </p>
+                      <p>
+                        When she isn't creating, Christina enjoys cooking, playing with her dog, rearranging her furniture, and spoenging up pointless trivia about TV shows from the '60's and '70's.
+                      </p>
                   </div>
+
+                  <div class="large-4 columns">
+
+                    <img class="circular-portrait" src="../assets/headshot.jpg" alt="portrait of christina" height="300">
+
+                  </div>
+
                 </div>
             </div>
 
@@ -255,33 +162,126 @@
         <script src="js/jquery.isotope.js" type="text/javascript"></script>
 
         <script type="text/javascript">
-          $(window).load(function(){
-              var $container = $('.portfolioContainer');
+        (function ($) {
+          var $container = $('.portfolioContainer'),
+            colWidth = function () {
+              var w = $container.width(),
+                columnNum = 1,
+                columnWidth = 0;
+              if (w > 1200) {
+                columnNum  = 5;
+              } else if (w > 900) {
+                columnNum  = 4;
+              } else if (w > 600) {
+                columnNum  = 3;
+              } else if (w > 300) {
+                columnNum  = 2;
+              }
+              columnWidth = Math.floor(w/columnNum);
+              $container.find('.item').each(function() {
+                var $item = $(this),
+                  multiplier_w = $item.attr('class').match(/item-w(\d)/),
+                  multiplier_h = $item.attr('class').match(/item-h(\d)/),
+                  width = multiplier_w ? columnWidth*multiplier_w[1]-4 : columnWidth-4,
+                  height = multiplier_h ? columnWidth*multiplier_h[1]*0.5 + 10 : columnWidth*0.5 + 10;
+                $item.css({
+                  width: width,
+                  height: height
+                });
+              });
+              return columnWidth;
+            },
+            isotope = function () {
               $container.isotope({
-                  filter: '*',
+                resizable: false,
+                itemSelector: '.item',
+                masonry: {
+                  columnWidth: colWidth(),
+                  gutterWidth: 4
+                }
+              });
+            };
+          isotope();
+          $(window).smartresize(isotope);
+
+
+          $('.portfolioFilter a').on('click', function(event){
+              event.preventDefault();
+              $('.portfolioFilter .current').removeClass('current');
+              $(this).addClass('current');
+
+              var selector = $(this).data('filter');
+              $container.isotope({
+                  filter: selector,
                   animationOptions: {
                       duration: 750,
                       easing: 'linear',
                       queue: false
                   }
-              });
-
-              $('.portfolioFilter a').click(function(){
-                  $('.portfolioFilter .current').removeClass('current');
-                  $(this).addClass('current');
-
-                  var selector = $(this).attr('data-filter');
-                  $container.isotope({
-                      filter: selector,
-                      animationOptions: {
-                          duration: 750,
-                          easing: 'linear',
-                          queue: false
-                      }
-                   });
-                   return false;
-              });
+               });
+               // resizer();
+               return false;
           });
+
+          // var resizer = function() {
+          //   console.log("im running");
+          //   var images = $('img');
+          //   for(var i = 0; i <= images.length; i += 1) {
+          //     var $image = $(images[i]);
+          //     var wrapperHeight = $image.parents('.item').height();
+          //     var wrapperWidth = $image.parents('.item').width();
+          //     var imageh = $image.height();
+          //     var imagew = $image.width();
+
+          //     if (i === 1) {
+          //       console.log($image);
+          //       console.log("wrapper height ", wrapperHeight);
+          //       console.log("wrapper width ", wrapperWidth);
+          //       console.log("image height ", imageh);
+          //       console.log("image width ", imagew);
+          //     }
+
+              // use background-size with background-images instead
+          //     if (imageh > wrapperHeight) {
+          //       $image.css('width', "inherit");
+          //     } else if (imagew > wrapperWidth) {
+          //       $image.css('height', "inherit");
+          //     } else {
+
+          //     }
+          //   }
+          // };
+        }(jQuery));
+
+
+          // $(window).load(function(){
+          //     var $container = $('.portfolioContainer');
+          //     $container.isotope({
+          //         filter: '*',
+          //         animationOptions: {
+          //             duration: 750,
+          //             easing: 'linear',
+          //             queue: false
+          //         }
+          //     });
+
+          //     $('.portfolioFilter a').on('click', function(event){
+          //         event.preventDefault();
+          //         $('.portfolioFilter .current').removeClass('current');
+          //         $(this).addClass('current');
+
+          //         var selector = $(this).data('filter');
+          //         $container.isotope({
+          //             filter: selector,
+          //             animationOptions: {
+          //                 duration: 750,
+          //                 easing: 'linear',
+          //                 queue: false
+          //             }
+          //          });
+          //          return false;
+          //     });
+          // });
         </script>
       </body>
 </html>

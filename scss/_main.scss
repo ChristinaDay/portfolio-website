@@ -1,89 +1,58 @@
-// $background-color: #0F201E;
-// $text-color: #04ABCA;
-// $body-font: "ff-enzo-web",sans-serif;
+
 @import "settings";
 
-// html, body {
-//   height: 100%;
-//   min-height: 100%;
-// }
-
-// .fullscreen-img {
-//   display:block;
-//   z-index:1;
-//   min-width:100%;
-//   height: 38%;
-//   background:transparent url('../img/orchid.jpg') center center no-repeat;
-//   border-bottom: 50px solid rgba(177, 99, 163, 0.36);
-// }
-
-// .content-area {
-//   border-top: 4px solid #f5ae8e;
-// }
-
-// .services-content {
-//   background-color: #F1F1F1;
-// }
-
-// .full-width {
-  // padding: 4%;
-// }
-
-.top-bar-section ul li > a, .top-bar-section ul li > a:active, .top-bar-section ul li > a:visited {
-  text-transform: uppercase;
-  transition: background 0.5s ease;
+body {
+  padding: 0 50px 0 50px;
 }
 
-.name {
-   height: 0px;
-}
-
-.brand {
-  text-align: center;
-  border-bottom: 1px solid #615E5E;
-  background: rgb(236, 235, 232);
-
-  h1 {
-    color: #615E5E;
-    font-size: 3em;
-
-    a:visited {
-      color: #615E5E;
-    }
-  }
-}
-
-.leader-content {
-  padding: 0 7% 7% 7%;
-
-  ul {
-    list-style-type: none;
-  }
-
-  li img {
-    height: 331px;
-    margin-top: 29px;
-  }
+h1 {
+  font-size: 42px;
+  line-height: 40px;
 }
 
 h2 {
-  text-shadow: 3px 4px 1px rgba(46, 240, 248, 0.42);
+  font-size: 26px;
+  font-style: bold;
+  letter-spacing: 3.12px;
+  text-transform: uppercase;
 }
 
-// .stripe {
-//   background-color: #f5ae8e;
-//   height: 4px;
-// }
-
-.top-bar ul li {
-  border-bottom: 4px solid rgba(46, 240, 248, 0.11);
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.93em;
 }
 
-.f-topbar-fixed {padding-top: 0 !important;}
+
+.fixed {
+  padding: 0 68px 0 67px;
+}
+
+.top-bar {
+  border-bottom: 1px solid $primary-color;
+
+  li {
+    line-height: 75px;
+  }
+  li a {
+    height: 74px;
+  }
+}
+
+.name {
+  color: #0a4d6c;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+  span {
+    color: #f26e58;
+  }
+}
+
+
 
 .portfolio {
   padding-top: 30px;
-  background: white;
 }
 
 .portfolioFilter {
@@ -101,9 +70,14 @@ h2 {
   }
 }
 
+.portfolio-title {
+  padding: 3%;
+}
+
 .portfolioFilter {
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .portfolioFilter a {
@@ -116,51 +90,29 @@ h2 {
     font-weight:bold;
 }
 
-.isotope-item {
-    width: 260px;
-    margin: 5px 5px 5px 5px;
-    z-index: 2;
+.portfolioContainer {
+  margin-bottom: 75px;
 }
 
-.isotope-hidden.isotope-item {
-    pointer-events: none;
-    z-index: 1;
+.about-content {
+  border-top: 1px solid $primary-color;
+  padding: 3%;
+  margin: 0 20px 0 17px;
 }
 
-.isotope,
-.isotope .isotope-item {
-  /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+.circular-portrait {
+  -moz-border-radius: 170px;
+  -webkit-border-radius: 170px;
+  border-radius: 170px;
+  display: block;
+  float: left;
+  width: 170px;
 }
 
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+.contact-content {
+  border-top: 1px solid $primary-color;
+  padding: 3%;
+  margin: 0 20px 0 17px;
+
 }
 
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
-}
